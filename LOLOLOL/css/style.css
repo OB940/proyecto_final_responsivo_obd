@@ -1,0 +1,153 @@
+/* RESETEO BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 20px; /* LO HE PUESTO PARA QUE LA PÁGINA NO TENGA CONFLICTO CON EL BUSCADOR DEL NAVEGADOR */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    /*background: linear-gradient(to bottom, #0c0b0b, #312f2f);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* FUENTE: https://www.youtube.com/watch?v=R4fxj8hRSLo */
+    background-image: repeating-linear-gradient(45deg, #0c0b0b, #1b1919 5px, #0c0b0b 10px, #0c0b0b 10px);
+}
+
+.anchoweb {
+    /* FUENTE DE "!important": https://getbootstrap.com/docs/4.3/utilities/spacing/ */
+    max-width: 900px !important; /* HE LIMITADO EL ANCHO A 900PX PRINCIPALMENTE POR ESTÉTICA*/
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+/* [ H E A D E R ] */
+header {
+    padding: 20px 20px 0px 20px;
+    background: linear-gradient(to bottom, #ffad6a00, #8888882d);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top-left-radius: 50x;
+    border-top-right-radius: 50px;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.lineaHe { color: rgb(61, 61, 61); }
+.logo {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-bottom: 0 px;
+    letter-spacing: 2px;
+
+    user-select: none;
+}
+
+/* [ N A V ]*/
+nav {
+    background: linear-gradient(to top, #0c0b0b 30%, #312f2f 70%);
+    border-top: 2px solid rgb(85, 85, 85);
+    border-left: 2px solid rgb(85, 85, 85);
+    border-right: 2px solid rgb(85, 85, 85);
+    border-bottom: 1px solid rgb(85, 85, 85);
+}
+
+nav ul, header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+nav li, header li {
+    display: flex;
+    align-items: center;
+}
+
+.lineaNav {
+    color: rgb(60, 66, 71);
+    /* FUENTE: https://developer.mozilla.org/es/docs/Web/CSS/Reference/Properties/user-select */
+    user-select: none; /* LO HE HECHO PORQUE EL CURSOR CAMBIA AL PASARLO POR LAS LÍNEAS*/
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px;
+}
+
+nav a:hover, footer>a:hover, header>ul>li>a:hover {
+    color: rgb(235, 153, 91);
+    text-decoration: underline;
+}
+
+marquee { user-select: none; }
+/* [ C U E R P O ]*/
+.banner {
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(85, 85, 85);
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.contenidoPagina {
+    background-color: #212121;
+    padding-bottom: 30px;
+    border: 2px solid rgb(85, 85, 85);
+}
+
+.tituloSeccion {
+    color: rgb(235, 153, 91);
+    border-bottom: 2px solid rgb(85, 85, 85);
+}
+
+.infoPrincipal {
+    margin: 0;
+    padding: 10px 25px;
+}
+
+.OTW {
+   border: 2px solid rgb(85, 85, 85); 
+   margin-bottom: 15px;
+}
+
+.seccion p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.tituloOTW {
+    color: rgb(209, 209, 209);
+    font-weight: bold;
+    text-decoration: underline;
+    user-select: none;
+}
+
+/* [ F O O T E R ] */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(10, 10, 10);
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
