@@ -1,0 +1,208 @@
+/* RESETEO BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    /*background: linear-gradient(to bottom, #0c0b0b, #312f2f);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* FUENTE: https://www.youtube.com/watch?v=R4fxj8hRSLo */
+    background-image: repeating-linear-gradient(45deg, #0c0b0b, #1b1919 5px, #0c0b0b 10px, #0c0b0b 10px);
+}
+
+.anchoweb /* HE FORZADO EL ANCHO DE LA PÁGINA A 900PX PARA QUE SE VEA BIEN EN DISPOSITIVOS PEQUEÑOS */ {
+    /* 
+     * FUENTE DEL !important: https://getbootstrap.com/docs/4.3/utilities/spacing/ 
+     * SIRVE PARA FORZAR UN ESTILO Y PARA PRIORIZARLO POR ENCIMA DEL BOOTSTRAP
+    */
+    max-width: 900px !important; /* HE LIMITADO EL ANCHO A 900PX PRINCIPALMENTE POR ESTÉTICA*/
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+
+/* [ H E A D E R ] */
+header {
+    padding: 10px 10px 0px 10px;
+    background: linear-gradient(to bottom, #ffad6a00, #8888882c);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.lineaHe { color: rgb(61, 61, 61); }
+
+.logo {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0 px;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+@media (max-width: 700px) { /* ESTO SIRVE PARA QUE EL HEADER Y EL NAV SE VEAN MEJOR EN DISPOSITIVOS PEQUEÑOS */
+    header, nav>ul { justify-content: center !important; }
+    .logo>h1 { font-size: 3em; }
+    .portada { max-width: 150px; }
+}
+
+/* [ N A V ]*/
+nav {
+    background: linear-gradient(to top, #0c0b0b 30%, #312f2f 70%);
+    border-top: 2px solid rgb(85, 85, 85);
+    border-left: 2px solid rgb(85, 85, 85);
+    border-right: 2px solid rgb(85, 85, 85);
+}
+
+nav ul, header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+nav li, header li {
+    display: flex;
+    align-items: center;
+}
+
+.lineaNav {
+    color: rgb(60, 66, 71);
+    /* FUENTE: https://developer.mozilla.org/es/docs/Web/CSS/Reference/Properties/user-select */
+    user-select: none; /* LO HE HECHO PORQUE EL CURSOR CAMBIA AL PASARLO POR LAS LÍNEAS*/
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px;
+}
+
+nav a:hover, footer>a:hover, header>ul>li>a:hover {
+    color: rgb(235, 153, 91);
+    text-decoration: underline;
+}
+
+/* [ N A V  2 ]*/
+.txtDeslizante { 
+    background: linear-gradient(to top, #0c0b0b, #312f2f);
+    max-height: 24px;
+    overflow: hidden; 
+    border-bottom: 2px solid rgb(85, 85, 85);
+}
+.marquee { 
+    font-size: 12px;
+    align-items: center;
+    animation: deslizar 15s linear infinite;
+    user-select: none; 
+}
+
+@keyframes deslizar {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* [ C U E R P O ]*/
+.banner {
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgb(85, 85, 85);
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.contenidoPagina {
+    background-color: #212121;
+    padding-bottom: 30px;
+    border: 2px solid rgb(85, 85, 85);
+}
+
+.tituloSeccion {
+    color: rgb(235, 153, 91);
+    border-bottom: 2px solid rgb(85, 85, 85);
+}
+
+.infoPrincipal {
+    margin: 0;
+    padding: 10px 25px;
+}
+
+.OTW {
+   border: 2px solid rgb(85, 85, 85); 
+   margin-bottom: 15px;
+}
+
+.seccion p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.tituloOTW {
+    color: rgb(231, 200, 165);
+    font-weight: bold;
+}
+
+.albumes {
+    margin-top: 20px;
+    display:flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.portada { 
+    border: 2px solid rgb(85, 85, 85);
+    max-width: 250px;
+    height: auto;
+}
+
+#mensajeContacto>textarea, .correoElec {
+    background: linear-gradient(to bottom, white, rgb(181, 181, 181));
+    width: 100%;
+    min-height: 40px;
+}
+
+.boton {
+    color: rgb(111, 73, 44);
+    border: 2px solid rgb(190, 96, 24);
+    padding: 5px;
+    background: linear-gradient(to bottom, rgb(255, 217, 136) 0%,rgb(163, 81, 19) 100%);
+    border-radius: 5px;
+}
+
+.form-control { border: 2px solid rgb(61, 61, 61) !important; }
+/* [ F O O T E R ] */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(to bottom, #2c2b2b 0%, #101010 100%);
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+
+    border-left: 2px solid rgb(61, 61, 61);
+    border-right: 2px solid rgb(61, 61, 61);
+    border-bottom: 2px solid rgb(61, 61, 61);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

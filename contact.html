@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact - trackscope</title>
+
+    <!-- [ E N L A C E S ] -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/tc_ico.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container anchoweb">
+        <!-- ESTO DE AQUÍ ES EL HEADER JUNTO AL LOGO (QUE ES BASICAMENTE UN TEXTO) 
+        Y EL ESLOGAN. SON LITERALMENTE CASI LO MISMO PERO CON DISTINTAS CLASES -->
+        <header>
+            <div class="logo"><h1>trackscope</h1></div>
+            <ul class="navHdr">
+                <li><a href="#">Tu cuenta</a></li>
+                <li class="lineaHe">|</li>
+                <li><a href="#">Idioma</a></li>
+                <li class="lineaHe">|</li>
+                <li><a href="#">Carrito</a></li>
+            </ul>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li class="lineaNav">|</li>
+                <li><a href="#">FOROS</a></li>
+                <li class="lineaNav">|</li>
+                <li><a href="#">CATÁLOGO</a></li>
+                <li class="lineaNav">|</li>
+                <li><a href="contact.html" style="color: rgb(235, 153, 91);">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+        <main class="contenidoPagina">
+            <div class="txtDeslizante">
+                <div class="text-light marquee">= [ ANÍMATE A CONTACTAR CON NOSOTROS. RECIBIRÁS UNA RESPUESTA EN 24H. ] =</div>
+            </div>
+            <section class="infoPrincipal row text-light">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="tituloSeccion">CONTACTA CON NOSOTROS:</p>
+                        <p>¿Has encontrado un bug, tienes un problema o una idea, o simplemente quieres hablar con alguien? No dudes en contactar con nosotros completando este formulario de aquí.</p>
+                    </div>
+                
+                    <div class="col">
+                        <form>
+                            <div class="mb-3">
+                                <label for="correo" class="form-label tituloSeccion">correo electrónico</label>
+                                <input type="email" class="form-control correoElec" name="correo" placeholder="ej: xxxx@trackscope.com" required>
+                                <div class="form-text">tu email se mantendrá a salvo.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="usuario" class="form-label tituloSeccion">mensaje</label>
+                                <div id="mensajeContacto">
+                                    <textarea name="mensajeContacto" class="form-control" required></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="boton">ENVIAR</button>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+        <footer> 
+            © COPYRIGHT 2026 OB940 NO RIGHTS RESERVED LOLOLOL</a>
+        </footer>
+    </div>
+</body>
+</html>
